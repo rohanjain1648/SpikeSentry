@@ -1,4 +1,4 @@
-﻿"""API Traffic Watch: offline window summarizer with dedup, spike detection,
+﻿"""SpikeSentry (AEGYTHON 2026 - API Traffic Watch): offline window summarizer with dedup, spike detection,
 spike explanations and an HTML dashboard. Synthetic data only; standard library only."""
 from __future__ import annotations
 
@@ -221,8 +221,8 @@ def render_html(res: Result, source: str = "input") -> str:
     notes = "".join(f'<p class="warn">warning: {e(m)}</p>' for m in res.warnings)
     notes += "".join(f'<p class="muted">skipped line {n}: {e(why)}</p>' for n, why in res.invalid)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>API Traffic Watch report</title><style>{CSS}</style></head><body>
-<h1>API Traffic Watch</h1><p class="muted">Source: {e(source)} &middot; synthetic data &middot; offline report</p>
+<title>SpikeSentry report</title><style>{CSS}</style></head><body>
+<h1>SpikeSentry</h1><p class="muted">Source: {e(source)} &middot; synthetic data &middot; offline report</p>
 <div class="cards"><div class="stat"><b>{res.total_rows}</b>rows read</div>
 <div class="stat"><b>{len(ws)}</b>windows</div><div class="stat"><b>{res.duplicates}</b>duplicates dropped</div>
 <div class="stat"><b>{len(res.invalid)}</b>invalid rows</div><div class="stat"><b>{len(spikes)}</b>spikes</div></div>

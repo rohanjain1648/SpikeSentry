@@ -1,8 +1,8 @@
-"""Validation on labeled synthetic series.
+﻿"""Validation on labeled synthetic series.
 
 Generates Poisson-like request counts per window, injects spikes of known size at
 known windows, then measures precision/recall of:
-  * robust  - median/MAD z-score (what traffic_watch uses)
+  * robust  - median/MAD z-score (what spikesentry uses)
   * meanstd - classic mean/stddev z-score (baseline for comparison)
 Deterministic (fixed seed). Run: python evaluate.py
 """
@@ -11,7 +11,7 @@ import random
 import statistics
 import sys
 
-from traffic_watch import flag_counts
+from spikesentry import flag_counts
 
 
 def poisson(lam, rng):

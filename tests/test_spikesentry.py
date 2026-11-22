@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from contextlib import redirect_stdout, redirect_stderr
 
-from traffic_watch import analyze, flag_counts, main, render, render_html
+from spikesentry import analyze, flag_counts, main, render, render_html
 
 H = "timestamp,request_id,client,endpoint\n"
 
