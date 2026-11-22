@@ -1,4 +1,4 @@
-﻿# SpikeSentry
+# SpikeSentry
 
 > **Explainable, offline spike detection for API request traffic.**
 > SpikeSentry reads request logs, removes duplicates, groups requests into time windows, flags unusual bursts with a robust statistical detector and says *why* each burst looks suspicious. It never touches a live API.
