@@ -1,0 +1,11 @@
+Synthetic validation: 500 series x 30 windows, seed 42
+method       TP    FP    FN  precision  recall     F1  FP/1k normal
+robust      767    23    37      0.971   0.954  0.962          1.62
+meanstd     440     5   364      0.989   0.547  0.705          0.35
+
+Recall by injected spike size (x normal rate):
+size      n   robust  meanstd
+2x      190     0.83     0.19
+3x      209     0.98     0.38
+4x      201     1.00     0.63
+6x      204     1.00     0.96

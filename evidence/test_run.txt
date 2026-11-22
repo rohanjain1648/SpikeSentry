@@ -1,0 +1,22 @@
+test_duplicates_dropped (tests.test_traffic_watch.Edge.test_duplicates_dropped) ... ok
+test_empty_gap_windows_included (tests.test_traffic_watch.Edge.test_empty_gap_windows_included) ... ok
+test_few_windows_warning (tests.test_traffic_watch.Edge.test_few_windows_warning) ... ok
+test_flat_traffic_no_divide_by_zero (tests.test_traffic_watch.Edge.test_flat_traffic_no_divide_by_zero) ... ok
+test_header_only (tests.test_traffic_watch.Edge.test_header_only) ... ok
+test_html_escapes_input (tests.test_traffic_watch.Edge.test_html_escapes_input) ... ok
+test_small_spike_below_min_count_ignored (tests.test_traffic_watch.Edge.test_small_spike_below_min_count_ignored) ... ok
+test_bad_header (tests.test_traffic_watch.Invalid.test_bad_header) ... ok
+test_bad_window (tests.test_traffic_watch.Invalid.test_bad_window) ... ok
+test_cli_json_and_html (tests.test_traffic_watch.Invalid.test_cli_json_and_html) ... ok
+test_cli_missing_file (tests.test_traffic_watch.Invalid.test_cli_missing_file) ... ok
+test_invalid_rows_skipped (tests.test_traffic_watch.Invalid.test_invalid_rows_skipped) ... ok
+test_html_dashboard (tests.test_traffic_watch.Normal.test_html_dashboard) ... ok
+test_iso_timestamps (tests.test_traffic_watch.Normal.test_iso_timestamps) ... ok
+test_spike_explained_single_source (tests.test_traffic_watch.Normal.test_spike_explained_single_source) ... ok
+test_spike_flagged_once (tests.test_traffic_watch.Normal.test_spike_flagged_once) ... ok
+test_steady_traffic_no_spike (tests.test_traffic_watch.Normal.test_steady_traffic_no_spike) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.060s
+
+OK

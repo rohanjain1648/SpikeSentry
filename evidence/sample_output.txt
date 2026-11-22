@@ -1,0 +1,26 @@
+Rows read: 218  duplicates dropped: 1  invalid: 2
+
+WINDOW START (UTC)      REQS  CLIENTS  TOP ENDPOINT        SCORE  FLAG
+2026-11-01T12:00:00Z      10        5  /profile            -0.67        ###
+2026-11-01T12:01:00Z      12        5  /profile             0.67        ####
+2026-11-01T12:02:00Z      12        6  /profile             0.67        ####
+2026-11-01T12:03:00Z      10        4  /search             -0.67        ###
+2026-11-01T12:04:00Z       9        5  /search             -1.35        ###
+2026-11-01T12:05:00Z      11        5  /profile              0.0        ###
+2026-11-01T12:06:00Z      12        5  /items               0.67        ####
+2026-11-01T12:07:00Z      10        6  /profile            -0.67        ###
+2026-11-01T12:08:00Z      10        5  /profile            -0.67        ###
+2026-11-01T12:09:00Z      68        7  /login              38.45  SPIKE ####################
+2026-11-01T12:10:00Z      11        4  /items                0.0        ###
+2026-11-01T12:11:00Z      11        5  /search               0.0        ###
+2026-11-01T12:12:00Z       9        5  /profile            -1.35        ###
+2026-11-01T12:13:00Z      12        4  /profile             0.67        ####
+2026-11-01T12:14:00Z       8        4  /profile            -2.02        ##
+
+Spikes flagged: 1
+  2026-11-01T12:09:00Z [high] single-source burst (possible brute force / scraping)
+    - single source: bot-1 sent 56/68 requests (82%)
+    - endpoint focus: /login is 100% of window vs 0% in baseline
+    - new clients: 1 not seen in normal windows (bot-1)
+  skipped line 218: Invalid isoformat string: 'not-a-date'
+  skipped line 219: missing request_id

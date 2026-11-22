@@ -1,0 +1,144 @@
+{
+  "total_rows": 218,
+  "duplicates": 1,
+  "invalid": [
+    [
+      218,
+      "Invalid isoformat string: 'not-a-date'"
+    ],
+    [
+      219,
+      "missing request_id"
+    ]
+  ],
+  "warnings": [],
+  "windows": [
+    {
+      "start": "2026-11-01T12:00:00Z",
+      "count": 10,
+      "unique_clients": 5,
+      "top_endpoint": "/profile",
+      "score": -0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:01:00Z",
+      "count": 12,
+      "unique_clients": 5,
+      "top_endpoint": "/profile",
+      "score": 0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:02:00Z",
+      "count": 12,
+      "unique_clients": 6,
+      "top_endpoint": "/profile",
+      "score": 0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:03:00Z",
+      "count": 10,
+      "unique_clients": 4,
+      "top_endpoint": "/search",
+      "score": -0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:04:00Z",
+      "count": 9,
+      "unique_clients": 5,
+      "top_endpoint": "/search",
+      "score": -1.35,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:05:00Z",
+      "count": 11,
+      "unique_clients": 5,
+      "top_endpoint": "/profile",
+      "score": 0.0,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:06:00Z",
+      "count": 12,
+      "unique_clients": 5,
+      "top_endpoint": "/items",
+      "score": 0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:07:00Z",
+      "count": 10,
+      "unique_clients": 6,
+      "top_endpoint": "/profile",
+      "score": -0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:08:00Z",
+      "count": 10,
+      "unique_clients": 5,
+      "top_endpoint": "/profile",
+      "score": -0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:09:00Z",
+      "count": 68,
+      "unique_clients": 7,
+      "top_endpoint": "/login",
+      "score": 38.45,
+      "spike": true,
+      "severity": "high",
+      "kind": "single-source burst (possible brute force / scraping)",
+      "reasons": [
+        "single source: bot-1 sent 56/68 requests (82%)",
+        "endpoint focus: /login is 100% of window vs 0% in baseline",
+        "new clients: 1 not seen in normal windows (bot-1)"
+      ]
+    },
+    {
+      "start": "2026-11-01T12:10:00Z",
+      "count": 11,
+      "unique_clients": 4,
+      "top_endpoint": "/items",
+      "score": 0.0,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:11:00Z",
+      "count": 11,
+      "unique_clients": 5,
+      "top_endpoint": "/search",
+      "score": 0.0,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:12:00Z",
+      "count": 9,
+      "unique_clients": 5,
+      "top_endpoint": "/profile",
+      "score": -1.35,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:13:00Z",
+      "count": 12,
+      "unique_clients": 4,
+      "top_endpoint": "/profile",
+      "score": 0.67,
+      "spike": false
+    },
+    {
+      "start": "2026-11-01T12:14:00Z",
+      "count": 8,
+      "unique_clients": 4,
+      "top_endpoint": "/profile",
+      "score": -2.02,
+      "spike": false
+    }
+  ]
+}
