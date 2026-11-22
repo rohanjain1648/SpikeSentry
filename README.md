@@ -245,11 +245,11 @@ The algorithm runs in `O(n + w log w)` time and uses `O(n + w)` memory, for `n` 
 
 For window counts $c_1, \dots, c_w$:
 
-$$
-\tilde{c} = \operatorname{median}(c_i), \qquad
-\mathrm{MAD} = \operatorname{median}\big(|c_i - \tilde{c}|\big), \qquad
-s_i = \frac{c_i - \tilde{c}}{\max(1.4826 \cdot \mathrm{MAD},\ 1)}
-$$
+$$\tilde{c} = \mathrm{median}(c_i)$$
+
+$$\mathrm{MAD} = \mathrm{median}\left(\left|c_i - \tilde{c}\right|\right)$$
+
+$$s_i = \frac{c_i - \tilde{c}}{\max\left(1.4826 \cdot \mathrm{MAD},\ 1\right)}$$
 
 A window is a **spike** when $s_i \ge \text{threshold}$ (default 3.5) **and** $c_i \ge \text{min-count}$ (default 10).
 
